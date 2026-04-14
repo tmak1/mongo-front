@@ -28,7 +28,6 @@ const QuestionResponse = z.object({
 export type QuestionResponse = z.infer<typeof QuestionResponse>;
 
 export async function getQuestions() {
-  console.log("s");
   const result = await axios.get(`${baseUrl}/questions`);
   return QuestionResponse.parse(result.data);
 }
