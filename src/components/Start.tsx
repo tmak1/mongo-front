@@ -19,7 +19,7 @@ export default function Start({ onStart, onHighscore }: StartProps) {
           Launch game!
         </Button>
         <Button onClick={onHighscore} size="lg" variant="secondary">
-          Show highscore
+          Show highscores
         </Button>
       </Stack>
     </Container>
